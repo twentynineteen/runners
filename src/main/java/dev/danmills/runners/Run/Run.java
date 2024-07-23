@@ -1,4 +1,4 @@
-package dev.danmills.runners;
+package dev.danmills.runners.Run;
 
 import java.time.LocalDateTime;
 

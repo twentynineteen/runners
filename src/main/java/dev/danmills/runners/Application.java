@@ -1,7 +1,8 @@
 package dev.danmills.runners;
 
-import dev.danmills.runners.Run;
-import dev.danmills.runners.Location;
+import dev.danmills.runners.Run.Location;
+import dev.danmills.runners.Run.Run;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.CommandLineRunner;
