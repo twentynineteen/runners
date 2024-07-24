@@ -2,6 +2,7 @@ package dev.danmills.runners;
 
 import dev.danmills.runners.Run.Location;
 import dev.danmills.runners.Run.Run;
+import dev.danmills.runners.Run.RunRepository;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -22,12 +23,6 @@ public class Application {
 		SpringApplication.run(Application.class, args);	
 	}
 	
-	@Bean
-	CommandLineRunner runner() {
-		return args -> {
-			Run run = new Run(1, "First Run", LocalDateTime.now(), LocalDateTime.now().plus(1, ChronoUnit.HOURS), 5, Location.OUTDOOR);
-			log.info("Run: " + run);
-		};
-	}
+	
 
 }
