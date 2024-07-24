@@ -25,6 +25,25 @@ public class RunRepository {
                .findFirst();
    }
 
+   // method to create a new run
+   void create(Run run) {
+      runs.add(run);
+   }
+
+   // method to update a run
+   void update(Run run, Integer id) {
+      Optional<Run> existingRun = findById(id);
+      if(existingRun.isPresent()) {
+         runs.set(runs.indexOf(existingRun.get()), run);
+      }
+   }
+
+   // delete method
+   void delete(Integer id) {
+      runs.removeIf(run -> run.id().equals(id));
+   }
+
+   // generates a set of dummy runs from memory on initialisation
    @PostConstruct
    private void init() {
       runs.add(new Run( 
