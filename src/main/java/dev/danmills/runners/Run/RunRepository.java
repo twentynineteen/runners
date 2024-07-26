@@ -1,8 +1,5 @@
 package dev.danmills.runners.Run;
 
-import java.time.LocalDateTime;
-import java.time.temporal.ChronoUnit;
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
@@ -12,7 +9,6 @@ import org.springframework.jdbc.core.simple.JdbcClient;
 import org.springframework.stereotype.Repository;
 import org.springframework.util.Assert;
 
-import jakarta.annotation.PostConstruct;
 
 @Repository
 public class RunRepository {
