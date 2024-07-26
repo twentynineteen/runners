@@ -15,7 +15,6 @@ import org.springframework.web.service.invoker.HttpServiceProxyFactory;
 
 import dev.danmills.runners.user.User;
 import dev.danmills.runners.user.UserHttpClient;
-import dev.danmills.runners.user.UserRestClient;
 
 
 @SpringBootApplication
