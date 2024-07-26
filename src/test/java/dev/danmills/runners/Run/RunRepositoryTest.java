@@ -27,38 +27,5 @@ public class RunRepositoryTest {
       assertEquals(1, repository.findAll().size());
    }
 
-   @Test
-   void testCreate() {
 
-   }
-
-   @Test
-   void testDelete() {
-
-   }
-
-   @Test
-   void testFindAll() {
-
-   }
-
-   @Test
-   void testFindById() {
-
-   }
-
-   @Test
-   void testFindByLocation() {
-
-   }
-
-   @Test
-   void testSaveAll() {
-
-   }
-
-   @Test
-   void testUpdate() {
-
-   }
 }
